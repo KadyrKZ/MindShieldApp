@@ -1,12 +1,15 @@
 // MainCoordinator.swift
 // Copyright © KadyrKZ. All rights reserved.
 
+import Localize_Swift
+import RxSwift
 import UIKit
 
 /// MainCoordinator is responsible for initializing and configuring the main tab bar and its child coordinators.
 final class MainCoordinator: BaseCoordinator {
     private let window: UIWindow
     private let tabBarController: UITabBarController
+    private let disposeBag = DisposeBag()
 
     private var diagnosticCoordinator: DiagnosticCoordinator?
     private var historyCoordinator: HistoryCoordinator?
@@ -64,5 +67,14 @@ final class MainCoordinator: BaseCoordinator {
         tabBarController.viewControllers = [diagnosticNavController, historyNavController, trainingNavController]
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
+
+        LocalizationService.shared.currentLanguage
+            .asObservable()
+            .subscribe(onNext: { _ in
+                diagnosticNavController.tabBarItem.title = ConstantsNavBar.diagnosticsTitle
+                historyNavController.tabBarItem.title = ConstantsNavBar.historyTitle
+                trainingNavController.tabBarItem.title = ConstantsNavBar.trainingTitle
+            })
+            .disposed(by: disposeBag)
     }
 }

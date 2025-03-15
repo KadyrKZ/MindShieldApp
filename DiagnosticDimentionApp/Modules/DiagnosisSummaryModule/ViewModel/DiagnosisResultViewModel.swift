@@ -21,7 +21,7 @@ final class DiagnosisResultViewModel {
 
     func saveRecord(with patientName: String) {
         let trimmedName = patientName.trimmingCharacters(in: .whitespacesAndNewlines)
-        let finalName = trimmedName.isEmpty ? "No Name" : trimmedName
+        let finalName = trimmedName.isEmpty ? DiagnosisSummaryConstants.nobodyTitle : trimmedName
         let record = DiagnosisRecord(
             patientName: finalName,
             date: Date(),

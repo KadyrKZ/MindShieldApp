@@ -6,9 +6,9 @@ import Foundation
 
 /// Constants for navigation bar and tab bar item titles.
 enum ConstantsNavBar {
-    static let diagnosticsTitle = "Diagnostics".localized()
-    static let historyTitle = "History".localized()
-    static let trainingTitle = "Training".localized()
+    static var diagnosticsTitle: String { "Diagnostics".localized() }
+    static var historyTitle: String { "History".localized() }
+    static var trainingTitle: String { "Training".localized() }
 }
 
 /// DiagnosisSummaryConstants – локализованные строки для экрана результатов диагностики.
@@ -20,6 +20,7 @@ enum DiagnosisSummaryConstants {
     static var alertTitle: String { "Success".localized() }
     static var alertMessage: String { "Diagnosis saved!".localized() }
     static var alertActionTitle: String { "OK".localized() }
+    static var nobodyTitle: String { "Nobody".localized() }
 }
 
 /// UserDefaults Keys

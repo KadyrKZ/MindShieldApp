@@ -44,6 +44,12 @@
             "value" : "Chose system language"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тілді тандаңыз"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -66,6 +72,12 @@
     "Diagnosis saved!" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагностика сақталды"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -77,6 +89,12 @@
     "Diagnosis show as: " : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ару деңгейі: "
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -99,6 +117,12 @@
     "Diagnosis:" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагноз: "
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -110,6 +134,12 @@
     "Diagnostics" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагностика"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -138,6 +168,12 @@
             "value" : "Done"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Сақтау"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -149,6 +185,12 @@
     "Enter name to save result" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Аты жөніңіз"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -200,6 +242,12 @@
             "value" : "For Body"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Толыө денеге"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -215,6 +263,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "For Brain"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Миға арналған"
           }
         },
         "ru" : {
@@ -234,6 +288,12 @@
             "value" : "For Fine Motor Skills"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кіші моторика"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -251,7 +311,7 @@
             "value" : "Gait"
           }
         },
-        "kk-KZ" : {
+        "kk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Жүру"
@@ -291,7 +351,7 @@
             "value" : "Hand"
           }
         },
-        "kk-KZ" : {
+        "kk" : {
           "stringUnit" : {
             "state" : "translated",
             "value" : "Қол"
@@ -305,9 +365,38 @@
         }
       }
     },
+    "Hide" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жасыру"
+          }
+        },
+        "kk-KZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жасыру"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Скрыть"
+          }
+        }
+      }
+    },
     "High" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жоғары"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -319,6 +408,12 @@
     "History" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өтілген"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -334,6 +429,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Instructions:\n        1. Tap \"Record Video\" to record.\n        2. Follow recommendations (lighting, angle).\n        3. Wait for diagnosis results."
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Нұсқаулық:\n        1. Жазу үшін \"Бейне Жазу\" түймесін түртіңіз.\n        2. Ұсыныстарды орындаңыз (жарықтандыру, бұрыш).\n        3. Диагноз нәтижелерін күтіңіз."
           }
         },
         "ru" : {
@@ -353,6 +454,12 @@
             "value" : "Please wait. Diagnostics takes 1 to 5 minutes."
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Күте тұрыңыз. 1 - 5 минут ішінде жауап береміз"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -364,6 +471,12 @@
     "Low" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Төмен"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -413,6 +526,23 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Давайте начнем упражнение с вас, ваша задача - продекламировать любое стихотворение, которое вы знаете наизусть, и параллельно решать примеры.В первой колонке есть более простые примеры, во второй колонке - более сложные, но сложность в том, что вы должны рассказывать стихотворение без остановки и давать ответ на эти примеры, если вдруг вы останавливаетесь, то мы начинаем все сначала. Сначала мы рассказываем стихотворение и решаем, исходя из первого\nпримера, давайте попробуем.  \n\nТаким образом, вы задействуете не только мыслительные функции, но и внимание."
+          }
+        }
+      }
+    },
+    "Nobody" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ешкім"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Никто"
           }
         }
       }
@@ -499,6 +629,12 @@
     "Probability of Parkinson's: " : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ауыру ықтималдығы: "
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -510,6 +646,12 @@
     "Probability:" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ықтималдық: "
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -525,6 +667,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Record Video"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видео түсіру"
           }
         },
         "ru" : {
@@ -544,6 +692,12 @@
             "value" : "Save"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Саөтау"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -559,6 +713,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Select Video from Gallery"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Галереядан тандау"
           }
         },
         "ru" : {
@@ -578,6 +738,12 @@
             "value" : "Settings"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Баптаулар"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -589,6 +755,12 @@
     "Start" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Бастау"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -617,6 +789,12 @@
     "Success" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Орындалды"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -632,6 +810,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "System theme"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Стилді тандаңыз"
           }
         },
         "ru" : {
@@ -713,6 +897,12 @@
             "value" : "Training"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жаттығу"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -747,6 +937,12 @@
             "value" : "Training Walking"
           }
         },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жүру жаттығулары"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -758,6 +954,12 @@
     "Unknown" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Безгісіз"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -780,6 +982,12 @@
     "Very High" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өте жоғары"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -791,6 +999,12 @@
     "Very Low" : {
       "extractionState" : "manual",
       "localizations" : {
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Өте төмен"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -874,6 +1088,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Watch Instruction Video"
+          }
+        },
+        "kk" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Видео инструкцияны көріңіз"
           }
         },
         "ru" : {

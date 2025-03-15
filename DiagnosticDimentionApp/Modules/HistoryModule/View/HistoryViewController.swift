@@ -1,6 +1,9 @@
 // HistoryViewController.swift
 // Copyright © KadyrKZ. All rights reserved.
 
+import Localize_Swift
+import RxCocoa
+import RxSwift
 import UIKit
 
 /// A view controller that displays the history of diagnostic records.
@@ -22,13 +25,25 @@ final class HistoryViewController: UITableViewController {
         return button
     }()
 
+    private let disposeBag = DisposeBag()
+
     // MARK: - Life Cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = ConstantsNavBar.historyTitle
+
+        LocalizationService.shared.currentLanguage
+            .asDriver(onErrorJustReturn: Localize.currentLanguage())
+            .drive(onNext: { [weak self] _ in
+                guard let self = self else { return }
+                self.title = ConstantsNavBar.historyTitle
+                self.tableView.reloadData()
+            })
+            .disposed(by: disposeBag)
+
         tableView.backgroundColor = .historyBackground
         tableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.reuseIdentifier)
+
         let clearBarButton = UIBarButtonItem(customView: clearButton)
         navigationItem.rightBarButtonItem = clearBarButton
 

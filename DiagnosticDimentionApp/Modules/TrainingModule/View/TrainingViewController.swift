@@ -25,15 +25,12 @@ final class TrainingViewController: UIViewController {
         super.viewDidLoad()
         setupBackgroundImage()
         setupCollectionView()
-
-        // Subscribe to reactive updates for the screen title.
         viewModel.localizedTitle
             .drive(onNext: { [weak self] newTitle in
                 self?.title = newTitle
             })
             .disposed(by: disposeBag)
 
-        // Subscribe to changes in section titles to trigger a reload of the collection view.
         viewModel.localizedSectionTitles
             .drive(onNext: { [weak self] _ in
                 self?.collectionView.reloadData()
