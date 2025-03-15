@@ -5,6 +5,6 @@ import Foundation
 
 /// TrainingSection
 struct TrainingSection {
-    let title: String
+    let titleKey: String
     let items: [TrainingModel]
 }

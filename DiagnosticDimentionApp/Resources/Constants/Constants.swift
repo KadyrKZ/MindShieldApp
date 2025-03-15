@@ -4,6 +4,13 @@
 import CoreGraphics
 import Foundation
 
+/// Constants for navigation bar and tab bar item titles.
+enum ConstantsNavBar {
+    static let diagnosticsTitle = "Diagnostics".localized()
+    static let historyTitle = "History".localized()
+    static let trainingTitle = "Training".localized()
+}
+
 /// DiagnosisSummaryConstants – локализованные строки для экрана результатов диагностики.
 enum DiagnosisSummaryConstants {
     static var viewTitle: String { "Diagnosis Summary".localized() }
@@ -22,8 +29,14 @@ enum UserDefaultsKeys {
 
 /// LoadingConstants – локализованные строки для экрана загрузки.
 enum LoadingConstants {
-    static var message: String { "Please wait.\nDiagnostics takes 1 to 5 minutes.".localized() }
+    static var message: String { "loadingMessageKey".localized() }
     static var hideButtonTitle: String { "Hide".localized() }
+}
+
+/// DiagnosticResponseKeys
+enum DiagnosticResponseKeys {
+    static let probability = "probability"
+    static let diagnosis = "diagnosis"
 }
 
 /// DiagnosticConstants – локализованные строки для экрана диагностики.
@@ -32,6 +45,9 @@ enum DiagnosticConstants {
     static var instructionsText: String {
         "instructions_text_key".localized()
     }
+
+    static var uploadErrorAlertTitle: String { "Upload Error".localized() }
+    static var unknownDiagnosis: String { "Unknown".localized() }
 
     static var recordButtonTitle: String { "Record Video".localized() }
     static var galleryButtonTitle: String { "Select Video from Gallery".localized() }
@@ -46,11 +62,17 @@ enum DiagnosticConstants {
 
     static var galleryUnavailableTitle: String { "Gallery Unavailable".localized() }
     static var galleryUnavailableMessage: String { "Access to the gallery is not available.".localized() }
-    // URL не локализуется
-    static var serverURL: String { "https://my-flask-app-608127581259.us-central1.run.app/predict" }
+    static var diagnosisTypes: [String] {
+        ["Gait".localized(), "Hand".localized()]
+    }
+
+    static var handServerURL: String { "https://neuroalz-api-719509516996.us-central1.run.app/predict" }
+    static var gaitServerURL: String { "https://my-flask-app-608127581259.us-central1.run.app/predict" }
     static var startingUploadMessage: String { "Starting video upload: ".localized() }
     static var uploadSuccessMessage: String { "Video upload successful. Server response: ".localized() }
     static var uploadErrorMessage: String { "Video upload error: ".localized() }
+
+    static var ok: String { "OK".localized() }
 }
 
 /// SettingsConstants – локализованные строки для экрана настроек.
@@ -71,18 +93,16 @@ enum HistoryConstants {
     static var clearButtonTitle: String { "Clear".localized() }
     static var probabilityPrefix: String { "Probability: ".localized() }
     static var diagnosisPrefix: String { "Diagnosis: ".localized() }
+    static var probabilityMessagePrefix: String { "Probability of Parkinson's: ".localized() }
+    static var diagnosisMessagePrefix: String { "Diagnosis show as: ".localized() }
+    static let percentSymbol = "%"
 }
 
 /// OnboardingConstants – локализованные строки для экрана онбординга.
 enum OnboardingConstants {
     static var welcomeTitle: String { "Welcome to Cognitive Diagnostics".localized() }
     static var descriptionText: String {
-        """
-        This app is designed for diagnosing cognitive impairments,
-        such as Alzheimer's and Parkinson's disease.
-        You can record a video of your gait and get a preliminary result
-        expressed in percentage.
-        """.localized()
+        "MeetingText".localized()
     }
 
     static var instructionsText: String {
@@ -104,15 +124,65 @@ enum OnboardingConstants {
     static var continueButtonTitle: String { "Start".localized() }
 }
 
+/// InstructionVideoConstants
+enum InstructionVideoConstants {
+    static let fileName = "instructionVideo"
+    static let fileExtension = "mp4"
+    static var errorTitle: String { "Error".localized() }
+    static var errorMessage: String { "Instruction video not found.".localized() }
+}
+
 /// TrainingDetailConstants – константы для экрана деталей тренировки.
 enum TrainingDetailConstants {
     static let videoHeight: CGFloat = 300
     static let sidePadding: CGFloat = 16
 }
 
-/// TrainingConstants – локализованные строки для экрана тренировки.
+/// TrainingConstants – локализованные строки для экрана тренировки.import Foundation
 enum TrainingConstants {
-    static let collectionSpacing: CGFloat = 10
-    static let headerHeight: CGFloat = 40
-    static var title: String { "Training".localized() }
+    static var title: String { "training_title_key".localized() }
+    static var collectionSpacing: CGFloat = 12
+    static var headerHeight: CGFloat = 40
+    static let collectionCellSpacing: CGFloat = 12
+
+    // Ключи для заголовков секций
+    static var forBrainKey: String { "for_brain_key" }
+    static var forFineMotorSkillsKey: String { "for_fine_motor_skills_key" }
+    static var forBodyKey: String { "for_body_key" }
+
+    // Ключи для тренировок в секции "For Brain"
+    static var trainingMindTitleKey: String { "training_mind_title_key" }
+    static var mindTrainDescriptionKey: String { "mind_train_description_key" }
+
+    // Ключи для секции "For Fine Motor Skills"
+    static var prayerStretchTitleKey: String { "prayer_stretch_title_key" }
+    static var prayerStretchDescriptionKey: String { "prayer_stretch_description_key" }
+
+    static var openHandSpreadsTitleKey: String { "open_hand_spreads_title_key" }
+    static var openHandSpreadsDescriptionKey: String { "open_hand_spreads_description_key" }
+
+    static var fingerFlippingTitleKey: String { "finger_flipping_title_key" }
+    static var fingerFlippingDescriptionKey: String { "finger_flipping_description_key" }
+
+    // Ключи для секции "For Body"
+    static var trainingWalkingBodyTitleKey: String { "training_walking_body_title_key" }
+    static var trainingWalkingBodyDescriptionKey: String { "training_walking_body_description_key" }
+}
+
+/// ImageNameConstraints
+enum ImageNameConstraints {
+    static let backButton: String = "backButton"
+    static let background: String = "background"
+    static let logo: String = "logo"
+    static let gear: String = "gear"
+}
+
+/// ProbabilityDescriptionConstants
+enum ProbabilityDescriptionConstants {
+    static var veryLow: String { "Very Low".localized() }
+    static var low: String { "Low".localized() }
+    static var middle: String { "Middle".localized() }
+    static var high: String { "High".localized() }
+    static var veryHigh: String { "Very High".localized() }
+    static var percentSymbol: String { "%" }
 }

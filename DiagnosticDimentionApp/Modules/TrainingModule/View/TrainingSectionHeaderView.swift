@@ -11,7 +11,7 @@ final class TrainingSectionHeaderView: UICollectionReusableView {
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "InriaSans-Bold", size: 20)
+        label.font = .notoSansBold(ofSize: 22)
         label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label

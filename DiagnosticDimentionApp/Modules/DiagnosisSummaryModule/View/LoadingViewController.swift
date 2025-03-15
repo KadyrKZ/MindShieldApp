@@ -10,7 +10,7 @@ final class LoadingViewController: UIViewController {
     private let messageLabel: UILabel = {
         let label = UILabel()
         label.text = LoadingConstants.message
-        label.font = UIFont.systemFont(ofSize: 18)
+        label.font = .notoSans(ofSize: 18)
         label.numberOfLines = 0
         label.textAlignment = .center
         label.textColor = .label
@@ -21,7 +21,7 @@ final class LoadingViewController: UIViewController {
     private lazy var hideButton: UIButton = {
         let button = UIButton()
         button.setTitle(LoadingConstants.hideButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont(name: "InriaSans-Bold", size: 16)
+        button.titleLabel?.font = .notoSansBold(ofSize: 16)
         button.backgroundColor = .button
         button.layer.borderColor = UIColor.label.cgColor
         button.layer.borderWidth = 1
@@ -48,6 +48,7 @@ final class LoadingViewController: UIViewController {
     }
 
     // MARK: - Setup Methods
+
     private func setupUI() {
         view.addSubview(activityIndicator)
         view.addSubview(messageLabel)
@@ -69,6 +70,7 @@ final class LoadingViewController: UIViewController {
     }
 
     // MARK: - Actions
+
     @objc private func backButtonTapped() {
         dismiss(animated: true, completion: nil)
     }

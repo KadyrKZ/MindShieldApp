@@ -4,6 +4,8 @@
 <dict>
 	<key>UIAppFonts</key>
 	<array>
+		<string>NotoSans-Variable-wght.ttf
+</string>
 		<string>InriaSans-Regular.ttf</string>
 		<string>InriaSans-Bold.ttf</string>
 	</array>

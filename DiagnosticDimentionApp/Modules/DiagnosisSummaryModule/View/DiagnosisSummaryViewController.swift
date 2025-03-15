@@ -42,8 +42,8 @@ final class DiagnosisSummaryViewController: UIViewController {
         let button = UIButton(type: .system)
         button.addTarget(self, action: #selector(saveButtonTapped), for: .touchUpInside)
         button.setTitle(DiagnosisSummaryConstants.saveButtonTitle, for: .normal)
-        button.titleLabel?.font = UIFont(name: "InriaSans-Bold", size: 16)
-        button.backgroundColor = UIColor(named: "buttonColor")
+        button.titleLabel?.font = .notoSans(ofSize: 16)
+        button.backgroundColor = .buttonColor
         button.layer.cornerRadius = 20
         button.setTitleColor(.label, for: .normal)
         button.translatesAutoresizingMaskIntoConstraints = false

@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		BD47FC442D73A919009B39FB /* Localize_Swift in Frameworks */ = {isa = PBXBuildFile; productRef = BD47FC432D73A919009B39FB /* Localize_Swift */; };
+		BD9DEC582D839BCA003006CA /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = BD9DEC572D839BCA003006CA /* RxCocoa */; };
+		BD9DEC5A2D839BCA003006CA /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = BD9DEC592D839BCA003006CA /* RxSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BD9DEC5A2D839BCA003006CA /* RxSwift in Frameworks */,
+				BD9DEC582D839BCA003006CA /* RxCocoa in Frameworks */,
 				BD47FC442D73A919009B39FB /* Localize_Swift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -133,6 +137,8 @@
 			name = DiagnosticDimentionApp;
 			packageProductDependencies = (
 				BD47FC432D73A919009B39FB /* Localize_Swift */,
+				BD9DEC572D839BCA003006CA /* RxCocoa */,
+				BD9DEC592D839BCA003006CA /* RxSwift */,
 			);
 			productName = DiagnosticDimentionApp;
 			productReference = BD389A1B2D5A8380005E7598 /* DiagnosticDimentionApp.app */;
@@ -214,12 +220,14 @@
 				en,
 				Base,
 				ru,
+				"kk-KZ",
 			);
 			mainGroup = BD389A122D5A8380005E7598;
 			minimizedProjectReferenceProxies = 1;
 			packageReferences = (
 				BDF858782D614A1A00369528 /* XCRemoteSwiftPackageReference "SnapKit" */,
 				BD47FC422D73A919009B39FB /* XCRemoteSwiftPackageReference "Localize-Swift" */,
+				BD9DEC562D839BCA003006CA /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = BD389A1C2D5A8380005E7598 /* Products */;
@@ -643,6 +651,14 @@
 				minimumVersion = 3.2.0;
 			};
 		};
+		BD9DEC562D839BCA003006CA /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.9.0;
+			};
+		};
 		BDF858782D614A1A00369528 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
@@ -658,6 +674,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BD47FC422D73A919009B39FB /* XCRemoteSwiftPackageReference "Localize-Swift" */;
 			productName = Localize_Swift;
+		};
+		BD9DEC572D839BCA003006CA /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD9DEC562D839BCA003006CA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		BD9DEC592D839BCA003006CA /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BD9DEC562D839BCA003006CA /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

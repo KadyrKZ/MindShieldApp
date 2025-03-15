@@ -9,6 +9,12 @@
             "state" : "translated",
             "value" : "Access to the gallery is not available."
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Доступ к галерее недоступен."
+          }
         }
       }
     },
@@ -46,6 +52,83 @@
         }
       }
     },
+    "Clear" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очистить"
+          }
+        }
+      }
+    },
+    "Diagnosis saved!" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Результаты сохранены"
+          }
+        }
+      }
+    },
+    "Diagnosis show as: " : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагностика показывает: "
+          }
+        }
+      }
+    },
+    "Diagnosis Summary" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Итог диагностики"
+          }
+        }
+      }
+    },
+    "Diagnosis:" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагноз: "
+          }
+        }
+      }
+    },
+    "Diagnostics" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Диагностика"
+          }
+        }
+      }
+    },
+    "Disclaimer: This app does not replace a doctor's consultation.\n        The results are preliminary and for informational purposes only." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Отказ от ответственности: Это приложение не заменяет консультацию врача.\n        Результаты являются предварительными и приводятся исключительно в информационных целях."
+          }
+        }
+      }
+    },
     "Done" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -63,6 +146,125 @@
         }
       }
     },
+    "Enter name to save result" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Введите имя, чтобы сохранить результат"
+          }
+        }
+      }
+    },
+    "finger_flipping_description_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This Parkinson’s exercise, isolated finger flicks, helps improve finger dexterity and coordination. Flick each finger individually—starting with the index, followed by the middle, ring, and little finger. Perform with both hands simultaneously or one at a time to enhance fine motor control."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это упражнение для пациентов с болезнью Паркинсона, состоящее из отдельных движений пальцами, помогает улучшить их ловкость и координацию. Двигайте каждым пальцем по отдельности — начиная с указательного, затем средним, безымянным и мизинцем. Выполняйте обеими руками одновременно или по очереди для улучшения контроля мелкой моторики."
+          }
+        }
+      }
+    },
+    "finger_flipping_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Finger Flipping"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Щелчок пальцами"
+          }
+        }
+      }
+    },
+    "for_body_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For Body"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для тело"
+          }
+        }
+      }
+    },
+    "for_brain_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For Brain"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для мозга"
+          }
+        }
+      }
+    },
+    "for_fine_motor_skills_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "For Fine Motor Skills"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Для мелкой моторики"
+          }
+        }
+      }
+    },
+    "Gait" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Gait"
+          }
+        },
+        "kk-KZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Жүру"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Походка"
+          }
+        }
+      }
+    },
     "Gallery Unavailable" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -70,6 +272,57 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Gallery Unavailable"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Галерия недоступна"
+          }
+        }
+      }
+    },
+    "Hand" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Hand"
+          }
+        },
+        "kk-KZ" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Қол"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рука"
+          }
+        }
+      }
+    },
+    "High" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Высокий"
+          }
+        }
+      }
+    },
+    "History" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "История"
           }
         }
       }
@@ -91,8 +344,179 @@
         }
       }
     },
-    "Key" : {
-      "extractionState" : "manual"
+    "loadingMessageKey" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Please wait. Diagnostics takes 1 to 5 minutes."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Пожалуйста, подождите. Диагностика занимает от 1 до 5 минут."
+          }
+        }
+      }
+    },
+    "Low" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Низкий"
+          }
+        }
+      }
+    },
+    "MeetingText" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This app is designed for diagnosing cognitive impairments,\n        such as Alzheimer's and Parkinson's disease.\n        You can record a video of your gait and get a preliminary result\n        expressed in percentage."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это приложение предназначено для диагностики когнитивных нарушений, таких как болезни Альцгеймера и Паркинсона. Вы можете записать на видео свою походку и получить предварительный результат выраженный в процентах."
+          }
+        }
+      }
+    },
+    "Middle" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Средний"
+          }
+        }
+      }
+    },
+    "mind_train_description_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Let's start the exercise with you, your task is to recite any poem you know by heart and solve the examples in parallel.In the first column there are simpler examples, in the second column there are more complex ones, but the difficulty is that you have to tell a poem without stopping and give an answer to these examples, if suddenly you stop, then we start all over again. First, we tell the poem and decide from the first\nexample, Let's try.  \n\nIn this way, you use not only mental functions, but also attention."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Давайте начнем упражнение с вас, ваша задача - продекламировать любое стихотворение, которое вы знаете наизусть, и параллельно решать примеры.В первой колонке есть более простые примеры, во второй колонке - более сложные, но сложность в том, что вы должны рассказывать стихотворение без остановки и давать ответ на эти примеры, если вдруг вы останавливаетесь, то мы начинаем все сначала. Сначала мы рассказываем стихотворение и решаем, исходя из первого\nпримера, давайте попробуем.  \n\nТаким образом, вы задействуете не только мыслительные функции, но и внимание."
+          }
+        }
+      }
+    },
+    "OK" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "ОК"
+          }
+        }
+      }
+    },
+    "open_hand_spreads_description_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "The open hand spreads exercise helps reactivate hand muscles and improve dexterity for Parkinson’s. Spread fingers wide, then bring them back together. Perform with palms up, elbows straight, and wrists extended. This can be done in various positions for flexibility."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Упражнение \"Разведение рук в стороны\" помогает активизировать мышцы рук и улучшить ловкость при Болезни Паркинсона. Широко разведите пальцы, затем сведите их вместе. Выполняйте его ладонями вверх,    локти выпрямлены, запястья вытянуты. Это можно делать в различных положениях для повышения гибкости. "
+          }
+        }
+      }
+    },
+    "open_hand_spreads_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Open Hand spreads"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Раскрытая ладонь расправляется "
+          }
+        }
+      }
+    },
+    "prayer_stretch_description_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This exercise for Parkinson’s involves lacing fingers together, inverting the hands, and lifting the elbows to stretch the shoulders dynamically. It can also be done statically by stretching one arm at a time, holding for 10–30 seconds to improve flexibility."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это упражнение для лечения болезни Паркинсона включает в себя переплетение пальцев, переворачивание кистей и поднятие локтей, чтобы динамически растянуть плечи. Его также можно выполнять статически вытягивая одну руку за раз, удерживая ее в таком положении в течение 10-30 секунд для улучшения гибкости."
+          }
+        }
+      }
+    },
+    "prayer_stretch_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Prayer Stretch"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Молитвенная растяжка "
+          }
+        }
+      }
+    },
+    "Probability of Parkinson's: " : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вероятность развития: "
+          }
+        }
+      }
+    },
+    "Probability:" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Вероятность: "
+          }
+        }
+      }
     },
     "Record Video" : {
       "extractionState" : "manual",
@@ -153,6 +577,23 @@
             "state" : "translated",
             "value" : "Settings"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
+    },
+    "Start" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Начать"
+          }
         }
       }
     },
@@ -169,6 +610,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Запуск загрузки видео:"
+          }
+        }
+      }
+    },
+    "Success" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Успешно сохранено"
           }
         }
       }
@@ -190,6 +642,17 @@
         }
       }
     },
+    "The result may be inaccurate." : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Результаты могут быть некорректными"
+          }
+        }
+      }
+    },
     "The result may be inaccurate. For a more precise diagnosis, please consult a specialized center." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -197,6 +660,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "The result may be inaccurate. For a more precise diagnosis, please consult a specialized center."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Результат может быть неточным. Для постановки более точного диагноза, пожалуйста, обратитесь в специализированный центр."
           }
         }
       }
@@ -218,6 +687,118 @@
         }
       }
     },
+    "training_mind_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Recite & Solve"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Рассказывай и Решай"
+          }
+        }
+      }
+    },
+    "training_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Training"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тренировка"
+          }
+        }
+      }
+    },
+    "training_walking_body_description_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "This Parkinson’s exercise, known as tandem walking, improves balance and coordination. Focus on a fixed point ahead, placing your heel directly in front of the opposite foot’s toe with each step. Repeat for 20 steps to enhance stability and mobility."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Это упражнение при болезни Паркинсона, известное как ходьба в тандеме, улучшает равновесие и координацию движений. Сосредоточьтесь на неподвижной точке впереди, поставив пятку прямо перед противоположной двигайте носком ноги при каждом шаге. Повторите упражнение в течение 20 шагов, чтобы повысить устойчивость и мобильность."
+          }
+        }
+      }
+    },
+    "training_walking_body_title_key" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "en" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Training Walking"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Тренировочная ходьба"
+          }
+        }
+      }
+    },
+    "Unknown" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Без имени"
+          }
+        }
+      }
+    },
+    "Upload Error" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка при загрузке. Проверьте соединение"
+          }
+        }
+      }
+    },
+    "Very High" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очень высокий"
+          }
+        }
+      }
+    },
+    "Very Low" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Очень низкий"
+          }
+        }
+      }
+    },
     "Video recording is not available on this device." : {
       "extractionState" : "manual",
       "localizations" : {
@@ -225,6 +806,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video recording is not available on this device."
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запись видео на этом устройстве недоступна."
           }
         }
       }
@@ -237,6 +824,12 @@
             "state" : "translated",
             "value" : "Video Recording Unavailable"
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Запись видео недоступна"
+          }
         }
       }
     },
@@ -248,6 +841,12 @@
             "state" : "translated",
             "value" : "Video upload error: "
           }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ошибка при загрузке видео:"
+          }
         }
       }
     },
@@ -258,6 +857,12 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Video upload successful. Server response: "
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Загрузка видео прошла успешно. Ответ сервера:"
           }
         }
       }
@@ -275,6 +880,17 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "Смотрите видео-инструкцию"
+          }
+        }
+      }
+    },
+    "Welcome to Cognitive Diagnostics" : {
+      "extractionState" : "manual",
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Добро пожаловать в когнитивную диагностику"
           }
         }
       }

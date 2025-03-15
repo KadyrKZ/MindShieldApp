@@ -10,10 +10,9 @@ final class TrainingDetailViewController: UIViewController {
 
     private let trainingModel: TrainingModel
     private var playerViewController: AVPlayerViewController!
-
     private let descriptionLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = .notoSans(ofSize: 18)
         label.textColor = .label
         label.numberOfLines = 0
         label.translatesAutoresizingMaskIntoConstraints = false
@@ -25,7 +24,7 @@ final class TrainingDetailViewController: UIViewController {
     init(trainingModel: TrainingModel) {
         self.trainingModel = trainingModel
         super.init(nibName: nil, bundle: nil)
-        title = trainingModel.title
+        title = trainingModel.titleKey.localized()
     }
 
     @available(*, unavailable)
@@ -37,7 +36,7 @@ final class TrainingDetailViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .button
+        view.backgroundColor = .buttonColor
         setupVideoPlayer()
         setupDescriptionLabel()
     }
@@ -51,11 +50,10 @@ final class TrainingDetailViewController: UIViewController {
 
     private func setupVideoPlayer() {
         playerViewController = AVPlayerViewController()
-        if let videoURL = Bundle.main.url(forResource: trainingModel.videoName, withExtension: "mp4") {
+        if let videoURL = Bundle.main.url(forResource: trainingModel.videoName, withExtension: nil) {
             let player = AVPlayer(url: videoURL)
             playerViewController.player = player
         }
-
         addChild(playerViewController)
         view.addSubview(playerViewController.view)
         playerViewController.view.translatesAutoresizingMaskIntoConstraints = false
@@ -70,7 +68,7 @@ final class TrainingDetailViewController: UIViewController {
     }
 
     private func setupDescriptionLabel() {
-        descriptionLabel.text = trainingModel.description
+        descriptionLabel.text = trainingModel.descriptionKey.localized()
         view.addSubview(descriptionLabel)
 
         NSLayoutConstraint.activate([

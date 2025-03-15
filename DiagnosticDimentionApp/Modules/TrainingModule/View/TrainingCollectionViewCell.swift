@@ -10,17 +10,20 @@ final class TrainingCollectionViewCell: UICollectionViewCell {
     // MARK: - UI Elements
 
     private let imageView: UIImageView = {
-        let iv = UIImageView()
-        iv.contentMode = .scaleAspectFill
-        iv.translatesAutoresizingMaskIntoConstraints = false
-        return iv
+        let imageView = UIImageView()
+        imageView.contentMode = .scaleAspectFill
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
     }()
 
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont(name: "InriaSans-Bold", size: 16)
+        label.font = .notoSansBold(ofSize: 18)
         label.textAlignment = .center
-        label.numberOfLines = 2
+        label.numberOfLines = 3
+        label.adjustsFontSizeToFitWidth = true
+        label.minimumScaleFactor = 0.7
+        label.lineBreakMode = .byTruncatingTail
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .label
         return label
@@ -30,8 +33,8 @@ final class TrainingCollectionViewCell: UICollectionViewCell {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        contentView.backgroundColor = .button
-        contentView.layer.cornerRadius = 8
+        contentView.backgroundColor = .buttonColor
+        contentView.layer.cornerRadius = 12
         contentView.layer.masksToBounds = true
         setupUI()
     }
@@ -50,7 +53,7 @@ final class TrainingCollectionViewCell: UICollectionViewCell {
         NSLayoutConstraint.activate([
             imageView.topAnchor.constraint(equalTo: contentView.topAnchor),
             imageView.centerXAnchor.constraint(equalTo: contentView.centerXAnchor),
-            imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor, multiplier: 1.0),
+            imageView.widthAnchor.constraint(equalTo: contentView.widthAnchor),
             imageView.heightAnchor.constraint(equalTo: imageView.widthAnchor),
 
             titleLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 4),
@@ -62,8 +65,8 @@ final class TrainingCollectionViewCell: UICollectionViewCell {
 
     // MARK: - Configuration
 
-    func configure(with model: TrainingModel) {
-        titleLabel.text = model.title
+    func configure(with model: TrainingModel, localizedTitle: String? = nil) {
+        titleLabel.text = localizedTitle ?? model.titleKey.localized()
         imageView.image = UIImage(named: model.imageName)
     }
 }

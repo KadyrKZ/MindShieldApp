@@ -5,8 +5,8 @@ import Foundation
 
 /// TrainingModel
 struct TrainingModel {
-    let title: String
+    let titleKey: String
     let imageName: String
     let videoName: String
-    let description: String
+    let descriptionKey: String
 }

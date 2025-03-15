@@ -115,7 +115,7 @@ class CircularProgressView: UIView {
         let percentage = Int(clampedProgress * 100)
 
         progressLayer.strokeEnd = clampedProgress
-        percentageLabel.text = "\(percentage)%"
+        percentageLabel.text = String(percentage) + ProbabilityDescriptionConstants.percentSymbol
         probabilityLabel.text = getProbabilityDescription(for: percentage)
         progressLayer.strokeColor = getProgressColor(for: percentage).cgColor
 
@@ -131,15 +131,15 @@ class CircularProgressView: UIView {
     private func getProbabilityDescription(for percentage: Int) -> String {
         switch percentage {
         case 0 ... 20:
-            return "Very Low"
+            return ProbabilityDescriptionConstants.veryLow
         case 21 ... 40:
-            return "Low"
+            return ProbabilityDescriptionConstants.low
         case 41 ... 60:
-            return "Middle"
+            return ProbabilityDescriptionConstants.middle
         case 61 ... 80:
-            return "High"
+            return ProbabilityDescriptionConstants.high
         default:
-            return "Very High"
+            return ProbabilityDescriptionConstants.veryHigh
         }
     }
 

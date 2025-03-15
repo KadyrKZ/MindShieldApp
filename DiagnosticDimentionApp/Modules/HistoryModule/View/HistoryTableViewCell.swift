@@ -19,7 +19,7 @@ final class HistoryTableViewCell: UITableViewCell {
 
     private let patientNameLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.boldSystemFont(ofSize: 18)
+        label.font = UIFont.boldSystemFont(ofSize: 20)
         label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -27,7 +27,7 @@ final class HistoryTableViewCell: UITableViewCell {
 
     private let probabilityLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -35,7 +35,7 @@ final class HistoryTableViewCell: UITableViewCell {
 
     private let diagnosisLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .label
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -43,7 +43,7 @@ final class HistoryTableViewCell: UITableViewCell {
 
     private let dateLabel: UILabel = {
         let label = UILabel()
-        label.font = UIFont.systemFont(ofSize: 16)
+        label.font = UIFont.systemFont(ofSize: 18)
         label.textColor = .historyBackground
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
@@ -101,8 +101,9 @@ final class HistoryTableViewCell: UITableViewCell {
 
     func configure(with record: DiagnosisRecord) {
         patientNameLabel.text = record.patientName
-        probabilityLabel.text = "Probability of Parkinson's: \(Int(record.probability))%"
-        diagnosisLabel.text = "Diagnosis show as: \(record.diagnosis)"
+        probabilityLabel.text = HistoryConstants
+            .probabilityMessagePrefix + String(Int(record.probability)) + HistoryConstants.percentSymbol
+        diagnosisLabel.text = HistoryConstants.diagnosisMessagePrefix + String(record.diagnosis)
 
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .medium

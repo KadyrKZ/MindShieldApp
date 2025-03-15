@@ -26,7 +26,7 @@ final class HistoryViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        title = "History"
+        title = ConstantsNavBar.historyTitle
         tableView.backgroundColor = .historyBackground
         tableView.register(HistoryTableViewCell.self, forCellReuseIdentifier: HistoryTableViewCell.reuseIdentifier)
         let clearBarButton = UIBarButtonItem(customView: clearButton)
